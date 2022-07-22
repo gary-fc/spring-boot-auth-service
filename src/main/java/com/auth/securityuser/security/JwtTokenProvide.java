@@ -33,6 +33,7 @@ public class JwtTokenProvide {
         Map<String, Object> claims = new HashMap<>();
         claims.put("accountId",user.getAccountId());
         claims.put("email", user.getEmail());
+        claims.put("username", user.getUsername());
 
         return Jwts.builder().setSubject(username).addClaims(claims).setIssuedAt(currentDate).setExpiration(expirationDate).signWith(SignatureAlgorithm.HS512, jwtSecret).compact();
     }

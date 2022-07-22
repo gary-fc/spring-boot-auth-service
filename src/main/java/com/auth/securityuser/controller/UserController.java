@@ -37,7 +37,6 @@ public class UserController {
     @CrossOrigin("*")
     @GetMapping("/userExistsByAccountId/{id}")
     public boolean userExistsByAccountId(@PathVariable(name = "id") long id) {
-        System.out.println(id);
         return userService.userExistsByAccountId(id);
     }
 }

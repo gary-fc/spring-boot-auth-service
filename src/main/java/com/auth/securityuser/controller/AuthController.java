@@ -4,15 +4,15 @@ import com.auth.securityuser.common.util.TokenVerifyResponseBuilder;
 import com.auth.securityuser.common.util.UserResponseBuilder;
 import com.auth.securityuser.domain.Role;
 import com.auth.securityuser.domain.User;
-import com.auth.securityuser.dto.JwtDTO;
-import com.auth.securityuser.responses.AuthResponse;
 import com.auth.securityuser.dto.CredentialsDTO;
+import com.auth.securityuser.dto.JwtDTO;
 import com.auth.securityuser.dto.UserDTO;
-import com.auth.securityuser.responses.TokenVerifyResponse;
-import com.auth.securityuser.responses.UserResponse;
 import com.auth.securityuser.exceptions.HttpResponseException;
 import com.auth.securityuser.repository.RoleRepository;
 import com.auth.securityuser.repository.UserRepository;
+import com.auth.securityuser.responses.AuthResponse;
+import com.auth.securityuser.responses.TokenVerifyResponse;
+import com.auth.securityuser.responses.UserResponse;
 import com.auth.securityuser.security.JwtTokenProvide;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -22,7 +22,6 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
