@@ -1,7 +1,7 @@
 package com.auth.securityuser.common.util;
 
+import com.auth.securityuser.common.responses.UserResponse;
 import com.auth.securityuser.domain.User;
-import com.auth.securityuser.responses.UserResponse;
 
 public class UserResponseBuilder {
     private UserResponse userResponse;
@@ -17,7 +17,7 @@ public class UserResponseBuilder {
     private UserResponseBuilder setUser(User user) {
         userResponse.setUsername(user.getUsername());
         userResponse.setEmail(user.getEmail());
-        userResponse.setFullName(user.getFullname());
+        userResponse.setFullName(user.getFullName());
         userResponse.setAccountId(user.getAccountId());
         return this;
     }
@@ -25,7 +25,5 @@ public class UserResponseBuilder {
     public UserResponse buildUserResponse() {
         return userResponse;
     }
-
-
 }
 

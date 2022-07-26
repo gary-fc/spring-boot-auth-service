@@ -1,4 +1,4 @@
-package com.auth.securityuser.responses;
+package com.auth.securityuser.common.responses;
 
 public class AuthResponse {
     private String token;

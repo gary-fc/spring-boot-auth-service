@@ -1,6 +1,6 @@
 package com.auth.securityuser.common.util;
 
-import com.auth.securityuser.responses.TokenVerifyResponse;
+import com.auth.securityuser.common.responses.TokenVerifyResponse;
 
 public class TokenVerifyResponseBuilder {
     private TokenVerifyResponse tokenVerifyResponse;

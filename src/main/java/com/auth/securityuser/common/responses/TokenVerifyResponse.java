@@ -1,4 +1,4 @@
-package com.auth.securityuser.responses;
+package com.auth.securityuser.common.responses;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
